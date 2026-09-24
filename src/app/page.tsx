@@ -196,7 +196,7 @@ export default function Dashboard() {
             Net Cash Flow (Current Month)
           </p>
           <h2
-            className={`text-5xl md:text-6xl font-serif tracking-tight ${
+            className={`text-3xl md:text-5xl font-serif tracking-tight break-words ${
               netCashFlow >= 0 ? "text-emerald-300" : "text-rose-300"
             }`}
           >
@@ -204,13 +204,13 @@ export default function Dashboard() {
           </h2>
           <p className="mt-4 text-sm text-slate-400 max-w-2xl leading-relaxed">
             Pemasukan tercatat{" "}
-            <span className="text-emerald-400">
+            <p className="text-lg md:text-xl font-serif mt-2 text-emerald-300 break-words">
               +Rp {totalIncome.toLocaleString("id-ID")}
-            </span>{" "}
+            </p>{" "}
             vs Pengeluaran{" "}
-            <span className="text-rose-400">
+            <p className="text-lg md:text-xl font-serif mt-2 text-emerald-300 break-words">
               -Rp {totalExpense.toLocaleString("id-ID")}
-            </span>
+            </p>
             .
           </p>
 
