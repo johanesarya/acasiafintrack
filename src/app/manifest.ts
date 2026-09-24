@@ -11,21 +11,16 @@ export default function manifest(): MetadataRoute.Manifest {
     theme_color: "#090d16",
     icons: [
       {
-        src: "/favicon.ico",
-        sizes: "any",
-        type: "image/x-icon",
-      },
-      {
-        src: "https://placehold.co/192x192/090d16/38bdf8.png?text=AF",
-        sizes: "192x192",
-        type: "image/png",
-        purpose: "maskable",
-      },
-      {
-        src: "https://placehold.co/512x512/090d16/38bdf8.png?text=AF",
-        sizes: "512x512",
+        src: "/logo.png",
+        sizes: "192x192 512x512",
         type: "image/png",
         purpose: "any",
+      },
+      {
+        src: "/logo.png",
+        sizes: "192x192 512x512",
+        type: "image/png",
+        purpose: "maskable",
       },
     ],
   };

@@ -13,8 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Acasia Fintrack",
-  description: "Automated Financial Intelligence Tracking",
+  title: "Acasia FinTrack",
+  description: "Automated Financial Intelligence",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export const viewport = {
