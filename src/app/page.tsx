@@ -204,13 +204,13 @@ export default function Dashboard() {
           </h2>
           <p className="mt-4 text-sm text-slate-400 max-w-2xl leading-relaxed">
             Pemasukan tercatat{" "}
-            <p className="text-lg md:text-xl font-serif mt-2 text-emerald-300 break-words">
+            <span className="text-emerald-400">
               +Rp {totalIncome.toLocaleString("id-ID")}
-            </p>{" "}
+            </span>{" "}
             vs Pengeluaran{" "}
-            <p className="text-lg md:text-xl font-serif mt-2 text-emerald-300 break-words">
+            <span className="text-rose-400">
               -Rp {totalExpense.toLocaleString("id-ID")}
-            </p>
+            </span>
             .
           </p>
 
@@ -240,7 +240,7 @@ export default function Dashboard() {
               <div className="flex items-center gap-2 text-slate-500 text-[10px] uppercase tracking-widest">
                 <ArrowUpRight className="w-3 h-3" /> Total Income
               </div>
-              <p className="text-2xl font-serif mt-2 text-emerald-300">
+              <p className="text-lg md:text-xl font-serif mt-2 text-emerald-300 break-words">
                 Rp {totalIncome.toLocaleString("id-ID")}
               </p>
               <p className="text-[10px] text-slate-600 mt-1">
@@ -252,7 +252,7 @@ export default function Dashboard() {
               <div className="flex items-center gap-2 text-slate-500 text-[10px] uppercase tracking-widest">
                 <ArrowDownLeft className="w-3 h-3" /> Total Expense
               </div>
-              <p className="text-2xl font-serif mt-2 text-rose-300">
+              <p className="text-lg md:text-xl font-serif mt-2 text-rose-300 break-words">
                 Rp {totalExpense.toLocaleString("id-ID")}
               </p>
               <p className="text-[10px] text-slate-600 mt-1">
