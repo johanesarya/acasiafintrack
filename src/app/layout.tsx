@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   description: "Automated Financial Intelligence Tracking",
 };
 
+export const viewport = {
+  themeColor: "#090d16",
+};
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
